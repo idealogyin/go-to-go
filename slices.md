@@ -34,5 +34,36 @@ slice = append(slice, "mango", "strawberry")
 fmt.Println("Append:", slice)
 ```
 
+Unlike Array, in Go slices has `copy` utility, that allows copying over slices. To copy our variable `slice` to `copied` variable, one can do like following
 
+```go
+copied := make([]string, len(slice))
+copy(copied, slice)
+```
+
+In first line we make another slice of length of `slice` variable and then use `copy` function to copy over content of `slice` variable to `copied` variable
+
+In addition to all those utility methods, Go provide a slice operator for slices, syntax for that looks like `[from:to]` where `from` is index number of slice to start from and go upto `to` index but excluding `to` . To illustrate, we would use our previous example
+
+```go
+sub = slice[2:5]
+fmt.Println("sliced sub: ", sub)
+// => sliced sub: [banana peach mango]
+```
+
+So, now its more clear. This has sliced from index 2 to 4 \(excluding index 5\). Similarly 
+
+```go
+// => This can be read as [0:5]
+sub = slice[:5]
+// => [apple orange banana peach]
+```
+
+Go also allows special syntaxfrom start index to length of slice
+
+```go
+// => This would copy over all elements fro index 4 to end
+slice[4:]
+// => [apple orange banana peach]
+```
 
