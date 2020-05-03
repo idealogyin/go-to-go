@@ -30,6 +30,6 @@
 * [Select](select.md)
 * [Timeout](timeout.md)
 * [Non-Blocking Channels](non-blocking-channels.md)
-* [WaitGroups](waitgroups.md)
+* [Waitgroups](waitgroups.md)
 * [Worker Pools](worker-pools.md)
 
