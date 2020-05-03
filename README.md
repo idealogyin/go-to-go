@@ -1,5 +1,9 @@
 # Introduction
 
+{% hint style="danger" %}
+**Note**: This work is still in progress, we are improving the content as well as writing new. This document will keep on edited unless you see this warning removed.
+{% endhint %}
+
 > Go is an open source programming language that makes it easy to build simple, reliable, and efficient software. - Excerpts from Golang.org
 
 ### Why need Go
