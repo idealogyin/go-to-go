@@ -24,7 +24,7 @@
 * [Errors](errors.md)
 * [Goroutines](goroutines.md)
 * [Channels](channels.md)
-* [Channel Buffering](channel-buffering.md)
+* [Buffered Channels](channel-buffering.md)
 * [Channel Synchronization](channel-synchronization.md)
 * [Channel Direction \(uni/bi\)](channel-direction-uni-bi.md)
 * [Select](select.md)
