@@ -23,12 +23,15 @@
 * [Defer](defer.md)
 * [Interfaces](interfaces.md)
 * [Errors & Panic](errors.md)
-* [Goroutines](goroutines.md)
-* [Channels](channels.md)
-* [Buffered Channels](channel-buffering.md)
-* [Channel Synchronization](channel-synchronization.md)
-* [Channel Direction \(uni/bi\)](channel-direction-uni-bi.md)
-* [Select](channel-select.md)
-* [Non-Blocking Channels](non-blocking-channels.md)
-* [Waitgroups](waitgroups.md)
+
+## Advanced Go
+
+* [Goroutines](advanced-go/goroutines.md)
+* [Buffered Channels](advanced-go/channel-buffering.md)
+* [Channels](advanced-go/channels.md)
+* [Channel Synchronization](advanced-go/channel-synchronization.md)
+* [Channel Direction \(uni/bi\)](advanced-go/channel-direction-uni-bi.md)
+* [Select](advanced-go/channel-select.md)
+* [Non-Blocking Channels](advanced-go/non-blocking-channels.md)
+* [Waitgroups](advanced-go/waitgroups.md)
 
