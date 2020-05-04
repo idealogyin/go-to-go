@@ -27,7 +27,7 @@
 * [Buffered Channels](channel-buffering.md)
 * [Channel Synchronization](channel-synchronization.md)
 * [Channel Direction \(uni/bi\)](channel-direction-uni-bi.md)
-* [Select](select.md)
+* [Select](channel-select.md)
 * [Timeout](timeout.md)
 * [Non-Blocking Channels](non-blocking-channels.md)
 * [Waitgroups](waitgroups.md)

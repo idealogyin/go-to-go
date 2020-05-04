@@ -4,9 +4,9 @@
 This page is under active revision, content may be updated without notice
 {% endhint %}
 
-Previously we talked about how goroutines in Go language works. Today we will focus on providing robustness to our previous talk by using semaphores from [sync](http://golang.org/pkg/sync/#WaitGroup) package.
+Previously we talked about how goroutines in Go language works. Today we will focus on providing robustness to our previous chapters by using semaphores from [sync](http://golang.org/pkg/sync/#WaitGroup) package.
 
-Here is redone example from our previous blogpost
+Here is redone example from our previous chapter
 
 ```go
 package main 

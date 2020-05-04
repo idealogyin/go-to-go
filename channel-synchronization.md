@@ -29,5 +29,5 @@ See, how simply we achieved with channels what we were trying to achieve with `S
 <- finish
 ```
 
-here since there is no reciever mentioned explicitly, current context itself is a reciever. 
+here since there is no reciever mentioned explicitly, current context itself is a reciever. There are several other way to wait for goroutines.
 
