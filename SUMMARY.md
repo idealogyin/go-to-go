@@ -21,7 +21,7 @@
 * [Structs](structs.md)
 * [Methods](methods.md)
 * [Interfaces](interfaces.md)
-* [Errors](errors.md)
+* [Errors & Panic](errors.md)
 * [Goroutines](goroutines.md)
 * [Channels](channels.md)
 * [Buffered Channels](channel-buffering.md)

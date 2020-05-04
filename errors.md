@@ -1,4 +1,4 @@
-# Errors
+# Errors & Panic
 
 {% hint style="warning" %}
 This page is under active revision, content may be updated without notice
@@ -23,7 +23,7 @@ func testError(a int) (int, error) {
 **Note:** Some of you may have noticed weird return type compatibility in example above. But in Go, `nil` is considered of type error and hence they are compatible. Though it is still sounding weird to me :\)
 {% endhint %}
 
-Go allows one to define custom error type, by implementing `Error()` method on them. Consider the following example
+Go allows one to define custom error method, by implementing `Error()` method on any type. Consider the following example
 
 ```go
 type MyError struct{
@@ -47,4 +47,16 @@ func main() {
 ```
 
 In example as illustrated above, we have created a struct and defined a method `Error` on it
+
+### Panic
+
+Panic is a built-in function that stops the flow of control and begins _panicking_. When any function in Go calls panic**,** execution of function stops immediately. Any deferred functions are executed normally, and then it returns to its caller. 
+
+To the caller, then it behaves like a call to panic. The process keep continues up the stack until all functions in the current goroutine have returned, at which point the program crashes. One can imagine it like house of cards, where crashing one card in structure would almost crashes everything around. Or cascaded structure, where making one slip will crash up to the bottom of function call stack.
+
+Panics can be initiated by invoking panic directly. They can also be caused by runtime errors, such as out-of-bounds array accesses. to call a panic in Go, simply call to`panic` will suffice. Consider following example
+
+```go
+panic()
+```
 
