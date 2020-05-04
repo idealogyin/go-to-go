@@ -20,6 +20,7 @@
 * [Pointers](pointers.md)
 * [Structs](structs.md)
 * [Methods](methods.md)
+* [Defer](defer.md)
 * [Interfaces](interfaces.md)
 * [Errors & Panic](errors.md)
 * [Goroutines](goroutines.md)
