@@ -26,3 +26,10 @@ In above illustration, channel received first message `"Hello World"` and then w
     // fatal error: all goroutines are asleep - deadlock!
 ```
 
+Buffer capacity of a channel can be known by using utility method, provided by Go `cap` 
+
+```go
+cap(msg)
+// => 2
+```
+

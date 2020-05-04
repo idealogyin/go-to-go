@@ -34,7 +34,13 @@ func receiver(ch <- chan int) {
 }
 ```
 
- ****That way we have restricted channel to only recieve a value of type int. By default channel are synchronous and blocking in nature. What do we mean by synchronous and blocking is that at any given time channel \(as defined above\) can hold only one value at a time, unless it is recieved by reciever. Once reciever has recieved previous value channel can hold another, otherwise it can in some scenarios result in **deadlock**.
+Channel can be closed with utility finction `close` 
+
+```go
+close(ch)
+```
+
+That way we have restricted channel to only recieve a value of type int. By default channel are synchronous and blocking in nature. What do we mean by synchronous and blocking is that at any given time channel \(as defined above\) can hold only one value at a time, unless it is recieved by reciever. Once reciever has recieved previous value channel can hold another, otherwise it can in some scenarios result in **deadlock**.
 
 To overcome this Go has provided buffered channel. We will talk about channel buffering in next Chapter
 
