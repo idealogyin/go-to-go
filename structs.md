@@ -1,5 +1,9 @@
 # Structs
 
+{% hint style="warning" %}
+This page is under active revision, content may be updated without notice
+{% endhint %}
+
 Go has a speciel type `struct` to define custome type with named fields. Struct act like collection of attributes/properties similar to classes in OOPs languages out there, but not exactly.
 
 **Structs**

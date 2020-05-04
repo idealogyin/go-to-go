@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [Installation](untitled.md)
+* [Installation](installation.md)
 * [First Program](first-program.md)
 * [Code Organisation](code-organisation.md)
 * [Variables](variables.md)
