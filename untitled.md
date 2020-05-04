@@ -28,9 +28,9 @@ Again it is highly recommended that one should install the Golang directly from 
 Note: Direct link points to Go v1.14.2 at the time of writing this book. This may be periodically updated, but one is requested not to depend on it for latest version
 {% endhint %}
 
-Once you have downloaded the \`gzip\` file, extract it someplace in you home directory and then add following lines to you  $HOME/.bashrc or $HOME/.bash\_profile file
+Once you have downloaded the `gzip` file, extract it someplace in you home directory and then add following lines to you  `$HOME/.bashrc` or `$HOME/.bash_profile` file
 
-```text
+```bash
 export GOROOT=$HOME/bin/go1.14.2.linux-amd64/go
 export PATH=$PATH:$GOROOT/bin
 export GOPATH=$HOME/code/gocode
@@ -42,11 +42,11 @@ export PATH=$PATH:$GOBIN
 Please replace path with the path you have extracted the zip file into
 {% endhint %}
 
-Here GOROOT points to parent directory of bin in go folder, then the bin path is extended to PATH variable. \`GOPATH\` is where you go get or personal code lives, GOBIN points to go package or local code binary that gets generated when go code is compiled. We will discuss these at length, later
+Here `GOROOT` points to parent directory of bin in go folder, then the bin path is extended to `PATH` variable. `GOPATH` is where you go get or personal code lives, `GOBIN`points to go package or local code binary that gets generated when go code is compiled. We will discuss these at length, later
 
 Or alternatively If you're using Ubuntu 18.04 LTS or 19.10 on amd64, arm64, armhf or i386, then you can use the `longsleep/golang-backports` PPA and install Go 1.14. 
 
-```text
+```bash
 sudo add-apt-repository ppa:longsleep/golang-backports
 sudo apt update
 sudo apt install golang-go
@@ -86,14 +86,14 @@ If a binary distribution is not available for your combination of operating syst
 
 Now since we are done with installation. Lets test if everything is fine before moving forward. Fire up terminal on your system and run following command
 
-```text
+```bash
 go version
-// OUTPUT: go version go1.14.2 linux/amd64
+# OUTPUT: go version go1.14.2 linux/amd64
 ```
 
 If everything is fine one should seeversion output correctly.  To test tooling run following command in terminal
 
-```text
+```bash
 gofmt -v
 flag provided but not defined: -v
 usage: gofmt [flags] [path ...]

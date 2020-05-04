@@ -1,9 +1,5 @@
 # Errors
 
-{% hint style="warning" %}
-This page is under active revision, content may be updated without notice
-{% endhint %}
-
 In Go it is idiomatic to communicate errors explicitly, as separate return value. This contrasts with the exceptions used in languages like Java and Ruby.
 
 ```go

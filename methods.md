@@ -1,9 +1,5 @@
 # Methods
 
-{% hint style="warning" %}
-This page is under active revision, content may be updated without notice
-{% endhint %}
-
 In Go, Methods are similar to `func` except that they have a receiver to operate on. To get full\_name of a person we would love to define a method to `Person` struct like
 
 ```go

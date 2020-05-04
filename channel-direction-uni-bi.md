@@ -1,9 +1,5 @@
 # Channel Direction \(uni/bi\)
 
-{% hint style="warning" %}
-This page is under active revision, content may be updated without notice
-{% endhint %}
-
 By default channels can receive and send, but channels direction can be controlled by restricting them to either send or receive \(applicable only for method/func signature\). This ensures safety where required. For example
 
 ```go
