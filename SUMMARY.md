@@ -30,5 +30,4 @@
 * [Select](channel-select.md)
 * [Non-Blocking Channels](non-blocking-channels.md)
 * [Waitgroups](waitgroups.md)
-* [Worker Pools](worker-pools.md)
 
