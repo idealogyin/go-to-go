@@ -1,9 +1,5 @@
 # Errors & Panic
 
-{% hint style="warning" %}
-This page is under active revision, content may be updated without notice
-{% endhint %}
-
 In Go it is idiomatic to communicate errors explicitly, as separate return value. This contrasts with the exceptions used in languages like Java and Ruby. That meaning that Go leaves implementing error for programmer. Go implements error type and this would work similar to other primitive types.
 
 In Go, programmer can create and error by calling `error.New` with a string passed to it as an error message. Consider the example bwlo
