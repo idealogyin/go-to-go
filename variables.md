@@ -1,6 +1,6 @@
 # Variables
 
-Go is strictly typed laguage, meaning that one has to define type of the value a variable can hold. In Go, variables needs to be explicitely declared and further used by compiler to infer types and typechecking.
+Go is strictly typed language, meaning that one has to define type of the value a variable can hold. In Go, variables need to be explicitly declared and further used by the compiler to infer types and type-checking.
 
 Let's look at an example
 
@@ -25,19 +25,19 @@ func main() {
 }
 ```
 
-To try the above example, I would prefer to use [Go playground](https://play.golang.org/), since these are small example and Go playground is perfect example. Let go and put out code in Go Playground and hit 'Run'. Here is the output
+To try the above example, I would prefer to use [Go playground](https://play.golang.org/), since these are small examples and Go playground is a perfect example. Let go and put out code in Go Playground and hit 'Run'. Here is the output
 
 ```bash
-This would be auto infered as string
+This would be auto inferred as a string
 1 2
 true
 0
 oranges
 ```
 
-Now lets examine, what we did line by line. At line\#4, we declared a variable while initializing it to string, but we did not mention type. Whe type is not mentioned while declaration and initialization, Go will automatically infer type of that variable by type of the value being assigned. So in our case `var str` will be of type `string` 
+Now let's examine, what we did line by line. At line\#4, we declared a variable while initializing it to a string, but we did not mention type. Whe type is not mentioned while declaration and initialization, Go will automatically infer type of that variable by type of the value being assigned. So in our case, `var str` will be of type `string` 
 
-But Go will complain, when a variable is declared but not assigned without type declaration. Let's remove the assignment and run program again, what does one see? Obviously an error
+But Go will complain when a variable is declared but not assigned without type declaration. Let's remove the assignment and run the program again, what does one see? Obviously an error
 
 ```go
 var str
@@ -47,21 +47,20 @@ var str
 ./prog.go:4:12: syntax error: unexpected newline, expecting type
 ```
 
-It complains regarding type of var str is not defined, because Go could not infer type in absence of assignment, so it needs type to be declared explicitly when variable is not assigned any value
+It complains regarding type of var str is not defined, because Go could not infer type in absence of assignment, so it needs type to be declared explicitly when a variable is not assigned any value
 
-When variable is declared but not assigned, then go will by default assign zero value for that type. So for string type zero value is bank string `''` , for type int its `0` 
+When a variable is declared but not assigned, then go will by default assign zero value for that type. So for string type zero value is bank string `''` , for type int its `0` 
 
-Similarly Go allows one to declare multiple variable, multiple assignment at same time in one line, see line\#7
+Similarly Go allows one to declare multiple variables, multiple assignments at the same time in one line, see line\#7
 
 ```go
 var one, two int = 1, 2
 ```
 
-Here we declared variable `one` and `two`  as int and assigned 1 and 2 to them. On Line\#10, Go again auto infers type by value it is being assigned. But what about Line\#16?, one asks.
+Here we declared a variable `one` and `two`  as int and assigned 1 and 2 to them. On Line\#10, Go again auto infers type by value it is being assigned. But what about Line#16?, one asks.
 
 This `:=` is shorthand for variable declaration and assignment, this is equal to 
 
 ```go
 var isHappy = true
 ```
-
