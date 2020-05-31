@@ -1,6 +1,6 @@
 # Basic Types
 
-Go does have wide range of built-in types as well allows programmer to define custom types. We would discuss these later in depths. Here are some basic types that one should know before proceeding forward
+Go does have a wide range of built-in types as well as allows the programmer to define custom types. We would discuss these later in depths. Here are some basic types that one should know before proceeding forward
 
 ```go
 bool // holds boolean values
@@ -13,9 +13,9 @@ float32 float64
 complex64 complex128
 ```
 
- Bit size of int, uint, uintptr depends on system architecture. On 32 bit system, they would assumed to be 32 bit wide, while on 64 bit system, they would be 64 bit wide.
+ Bit size of int, uint, uintptr depends on system architecture. On 32 bit system, they would be assumed to 32 bit wide, while on 64 bit system, they would be 64 bit wide.
 
-Usually using `int` should suffice unless we have specific resaon to use signed, unsigned or other varying types of integers/floats.
+Usually using `int` should suffice unless we have specific reason to use signed, unsigned or other varying types of integers/floats.
 
 ### Type Conversions
 
@@ -30,4 +30,3 @@ var age int = 23
 var agef float64 = float64(age)
 var ageu uint = uint(agef)
 ```
-
